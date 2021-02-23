@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ExperienceBar = () => {
+export const Index = () => {
 
   return (
     <>
