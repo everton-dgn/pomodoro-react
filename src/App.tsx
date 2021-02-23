@@ -1,11 +1,14 @@
 import React from 'react'
-import { ExperienceBar } from '@/components/ExperienceBar'
+import { Index } from '@/components/ExperienceBar'
 import GlobalStyles from '@/styles/GlobalStyles'
+import { C } from '@/theme'
 
 function App() {
   return (
     <>
-      <ExperienceBar />
+      <C.Container>
+        <Index />
+      </C.Container>
       <GlobalStyles />
     </>
   )
