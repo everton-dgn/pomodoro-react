@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PrettierConfiguration">
+    <option name="myRunOnReformat" value="true" />
+    <option name="myFilesPattern" value="{**/*,*}.{md, txt, rst, adoc, html, php, scss, css, js, jsx, json, twig, sql, txt, htaccess, json, ini, lock, xml, log, ts, vue, tsx}" />
+  </component>
+</project>
