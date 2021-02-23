@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import { S } from '@/theme'
+import { s } from '@/theme'
 
 export default createGlobalStyle`
   * {
@@ -15,9 +15,9 @@ export default createGlobalStyle`
   body,
   html,
   #root {
-    background-color: ${S.light200};
+    background-color: ${s.light200};
     font-size: 15px;
-    color: ${S.dark500};
+    color: ${s.dark500};
   }
 
   #root, input, select, textarea, button {
@@ -47,12 +47,12 @@ export default createGlobalStyle`
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: ${S.light300};
+    background-color: ${s.light300};
     border-radius: 20px;
   }
 
   :root {
-    scrollbar-color: ${S.light300} ${S.light100} !important;
+    scrollbar-color: ${s.light300} ${s.light100} !important;
     scrollbar-width: 7px !important;
   }
 `

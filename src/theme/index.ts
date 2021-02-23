@@ -4,15 +4,15 @@ import breakpoints from '@/theme/breakpoints'
 import transitions from '@/theme/transitions'
 import layouts from '@/theme/layouts'
 
-const S = {
+const s = {
   ...colors,
   ...typograph,
   ...breakpoints,
   ...transitions
 }
 
-const C = {
+const c = {
   ...layouts
 }
 
-export { S, C }
+export { s, c }
