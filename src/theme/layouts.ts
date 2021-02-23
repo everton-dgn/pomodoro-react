@@ -7,7 +7,7 @@ export default {
     width: 100%;
   `,
 
-  ContainerFlex: styled.div`
+  Container: styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
