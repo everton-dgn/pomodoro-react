@@ -20,7 +20,7 @@ O projeto Pomovi consiste em ajudar as pessoas à controlar seu tempo na frente 
 ---
 # :question: Como rodar o projeto
 ## Acessando direto pelo site:
-* Você pode clicar nesse [link](http://.vercel.app/) e acessar a aplicação que está hospedada na plataforma da Vercel.
+* Você pode clicar nesse [link](https://pomodoro-react-chi.vercel.app/) e acessar a aplicação que está hospedada na plataforma da Vercel.
 
 ## Rodando na máquina local:
 (certifique-se de ter instalado na sua máquina o [Node](https://nodejs.org/en/) e o [Yarn](https://yarnpkg.com/))
