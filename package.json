@@ -9,7 +9,8 @@
   },
   "scripts": {
     "dev": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "start": "serve -s build"
   },
   "devDependencies": {
     "react-scripts": "4.0.3",
