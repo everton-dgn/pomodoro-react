@@ -1,7 +1,7 @@
 import React from 'react'
-import { ExperienceBar } from '@/components/ExperienceBar'
-import GlobalStyles from '@/styles/GlobalStyles'
-import * as S from '@/styles'
+import { ExperienceBar } from 'components/ExperienceBar'
+import GlobalStyles from 'styles/GlobalStyles'
+import * as S from 'styles'
 
 function App() {
   return (

@@ -24,5 +24,5 @@ export default {
 
   red300: '#f44336',
 
-  green300: '#4ae36c',
+  green300: '#4ae36c'
 }

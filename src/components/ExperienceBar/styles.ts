@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { s, c } from '@/theme'
+import { s, c } from 'theme'
 
 export const ContainerMain = styled(c.Row)`
   justify-content: center;

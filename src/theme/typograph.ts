@@ -17,5 +17,5 @@ export default {
   textSmall1: '11px',
   textSmall2: '10px',
   textSmall3: '9px',
-  textSmall4: '8px',
+  textSmall4: '8px'
 }

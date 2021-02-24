@@ -20,5 +20,5 @@ export default {
     display: flex;
     flex-direction: row;
     width: 100%;
-  `,
+  `
 }

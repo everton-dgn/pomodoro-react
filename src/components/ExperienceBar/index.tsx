@@ -1,5 +1,5 @@
 import React from 'react'
-import * as S from '@/components/ExperienceBar/styles'
+import * as S from 'components/ExperienceBar/styles'
 
 export const ExperienceBar = () => {
   return (
