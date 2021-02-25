@@ -1,4 +1,6 @@
 export default {
+  textTime: '12rem',
+  textSeparator: '10.7rem',
   textTitle1: '3.0rem',
   textTitle2: '2.8rem',
   textTitle3: '2.4rem',
