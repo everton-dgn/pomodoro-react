@@ -1,11 +1,6 @@
 export default {
-  primary: '#ccc',
-  secondary: '#ccc',
-  tertiary: '#ccc',
-
-  dark400: '#223543',
-  dark500: '#374151',
-  dark600: '#2E384D',
+  dark400: '#374151',
+  dark500: '#223543',
   dark700: '#333',
   dark800: '#222',
   dark900: '#000',
