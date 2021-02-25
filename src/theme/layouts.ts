@@ -11,7 +11,7 @@ export default {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 120rem;
+    max-width: 103rem;
     margin: 0 auto;
     padding: 0 2rem;
   `,
