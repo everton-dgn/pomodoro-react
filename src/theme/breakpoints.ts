@@ -9,5 +9,5 @@ export default {
   break: (num1: BreakValues) => `@media screen and (min-width: ${num1}rem)`,
   breakMax: (num2: BreakValues) => `@media screen and (max-width: ${num2}rem)`,
   breakMinMax: ({ param1, param2 }: BreakValues) =>
-    `@media screen and (max-width: ${param2}px) and (min-width: ${param1}rem)`
+    `@media screen and (max-width: ${param2}rem) and (min-width: ${param1}rem)`
 }
