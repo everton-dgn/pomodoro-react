@@ -50,6 +50,11 @@ export default createGlobalStyle`
     font: 400 1.6rem 'Poppins', sans-serif;
   }
 
+  button {
+    border: none;
+    border-radius: 0.5rem;
+  }
+
   #root {
     display: flex;
     flex-direction: column;
