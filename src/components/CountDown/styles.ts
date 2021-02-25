@@ -1,12 +1,36 @@
 import styled from 'styled-components'
-import { c } from 'theme'
+import { c, s } from 'theme'
 
 export const CountContainer = styled(c.Row)`
   align-items: center;
-  font-weight: 700;
-  font-family: Rajdhani;
+  font-weight: 600;
+  font-family: 'Rajdhani', 'Arial', sans-serif;
+  font-size: clamp(10rem, 9rem + 1vw, ${s.textTime});
 `
 
-export const Minutes = styled.div``
+export const Minutes = styled(c.Row)`
+  flex: 1;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 0 6rem rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+  overflow: hidden;
 
-export const Seconds = styled.div``
+  span {
+    background-color: ${s.light100};
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
+    & + span {
+      border-left: 0.25rem solid ${s.light200};
+    }
+  }
+`
+
+export const Separator = styled.span`
+  font-size: ${s.textSeparator};
+  margin: 0 1rem;
+`
+
+export const Seconds = styled(Minutes)``
