@@ -1,14 +1,28 @@
 import React from 'react'
-import { ExperienceBar } from 'components/ExperienceBar'
 import GlobalStyles from 'styles/GlobalStyles'
 import * as S from 'styles'
+import { c as C } from 'theme'
+import { ExperienceBar } from 'components/ExperienceBar'
+import { Profile } from 'components/Profile'
+import { CompleteChallenges } from 'components/CompleteChallenges'
+import { CountDown } from 'components/CountDown'
 
 function App() {
   return (
     <>
-      <S.ContainerMain>
+      <C.Container>
         <ExperienceBar />
-      </S.ContainerMain>
+
+        <S.ContainerGrid>
+          <div>
+            <Profile />
+            <CompleteChallenges />
+            <CountDown />
+          </div>
+          <div>col2</div>
+        </S.ContainerGrid>
+      </C.Container>
+
       <GlobalStyles />
     </>
   )
