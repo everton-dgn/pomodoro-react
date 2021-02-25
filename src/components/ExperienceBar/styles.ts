@@ -4,6 +4,8 @@ import { s, c } from 'theme'
 export const ContainerMain = styled(c.Row)`
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
   span {
     display: flex;
@@ -14,17 +16,17 @@ export const ContainerMain = styled(c.Row)`
 `
 
 export const BarGrey = styled(c.Row)`
-  height: 15px;
+  height: 1.5rem;
   background-color: ${s.light400};
-  border-radius: 20px;
-  margin: 0 5px;
+  border-radius: 2rem;
+  margin: 0 0.5rem;
   position: relative;
 `
 
 export const BarGreen = styled(c.Row)<{ percent: number }>`
-  height: 15px;
+  height: 1.5rem;
   background-color: ${s.green300};
-  border-radius: 20px;
+  border-radius: 2rem;
   width: ${props => props.percent}%;
 `
 
@@ -32,7 +34,7 @@ export const CurrentExperience = styled.span<{ percent: number }>`
   display: flex;
   flex-direction: row;
   left: ${props => props.percent}%;
-  bottom: 15px;
+  bottom: 1.5rem;
   position: absolute;
   transform: translateX(-50%);
 `

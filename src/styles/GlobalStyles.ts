@@ -8,20 +8,23 @@ export default createGlobalStyle`
     box-sizing: border-box;
     text-decoration: none !important;
     -webkit-font-smoothing: antialiased !important;
-    font-family: 'Poppins', 'Arial', sans-serif !important;
+    font-family: 'Poppins', 'Arial', sans-serif;
     list-style: none !important;
   }
 
+  html {
+    font-size: 62.5%;
+  }
+  
   body,
   html,
   #root {
     background-color: ${s.light200};
-    font-size: 15px;
     color: ${s.dark500};
   }
 
-  #root, input, select, textarea, button {
-    font: 400 16px 'Poppins', sans-serif;
+  body, #root, input, select, textarea, button {
+    font: 400 1.6rem 'Poppins', sans-serif;
   }
 
   #root {
@@ -33,7 +36,7 @@ export default createGlobalStyle`
 
   a,
   a:active {
-    color: #00f;
+    color: inherit;
     text-decoration: none;
   }
 
@@ -43,16 +46,16 @@ export default createGlobalStyle`
 
   ::-webkit-scrollbar,
   scrollbar-width {
-    width: 7px !important;
+    width: 0.7rem !important;
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: ${s.light300};
-    border-radius: 20px;
+    background-color: ${s.blue300};
+    border-radius: 20rem;
   }
 
   :root {
-    scrollbar-color: ${s.light300} ${s.light100} !important;
-    scrollbar-width: 7px !important;
+    scrollbar-color: ${s.blue300} ${s.light100} !important;
+    scrollbar-width: 0.7rem !important;
   }
 `

@@ -11,9 +11,9 @@ export default {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1280px;
+    max-width: 120rem;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 2rem;
   `,
 
   Row: styled.div`
