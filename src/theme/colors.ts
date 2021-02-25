@@ -14,7 +14,8 @@ export default {
   blue300: '#B2C7E6',
   blue400: '#8DA6DE',
   blue500: '#4C7AC8',
-  blue600: '#3E5189',
+  blue600: '#3563b3',
+  blue700: '#3E5189',
   blue800: '#25325C',
 
   red300: '#f44336',

@@ -9,6 +9,7 @@ export default createGlobalStyle`
     text-decoration: none !important;
     -webkit-font-smoothing: antialiased !important;
     list-style: none !important;
+    outline: none;
   }
 
   html {
