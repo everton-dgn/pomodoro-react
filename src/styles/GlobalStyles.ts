@@ -8,7 +8,6 @@ export default createGlobalStyle`
     box-sizing: border-box;
     text-decoration: none !important;
     -webkit-font-smoothing: antialiased !important;
-    font-family: 'Poppins', 'Arial', sans-serif;
     list-style: none !important;
   }
 
