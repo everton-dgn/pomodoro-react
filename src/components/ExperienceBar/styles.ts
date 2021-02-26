@@ -25,7 +25,7 @@ export const BarGrey = styled(c.Row)`
 
 export const BarGreen = styled(c.Row)<{ percent: number }>`
   height: 1.5rem;
-  background-color: ${s.green300};
+  background-image: ${s.lgGreen400};
   border-radius: 2rem;
   width: ${props => props.percent}%;
 `
