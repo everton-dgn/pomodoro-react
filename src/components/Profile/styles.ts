@@ -17,7 +17,7 @@ export const ProfileContainer = styled(c.Row)`
     flex-direction: column;
 
     strong {
-      font-weight: 600;
+      font-weight: 500;
       font-size: ${s.textTitle3};
       color: ${s.dark500};
     }

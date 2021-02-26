@@ -6,20 +6,23 @@ import { ExperienceBar } from 'components/ExperienceBar'
 import { Profile } from 'components/Profile'
 import { CompleteChallenges } from 'components/CompleteChallenges'
 import { CountDown } from 'components/CountDown'
+import { ChallengeBox } from 'components/ChallengeBox'
 
 function App() {
   return (
     <>
-      <C.Container>
+      <C.Container as="main">
         <ExperienceBar />
 
         <S.ContainerGrid>
-          <div>
+          <S.Col1>
             <Profile />
             <CompleteChallenges />
             <CountDown />
-          </div>
-          <div>col2</div>
+          </S.Col1>
+          <S.Col2>
+            <ChallengeBox />
+          </S.Col2>
         </S.ContainerGrid>
       </C.Container>
 

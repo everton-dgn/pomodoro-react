@@ -53,7 +53,7 @@ export default createGlobalStyle`
 
   button {
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 0.6rem;
   }
 
   #root {

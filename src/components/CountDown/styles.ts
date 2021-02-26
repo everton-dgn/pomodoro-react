@@ -12,8 +12,8 @@ export const Minutes = styled(c.Row)`
   flex: 1;
   align-items: center;
   justify-content: space-evenly;
-  box-shadow: 0 0 6rem rgba(0, 0, 0, 0.05);
-  border-radius: 0.5rem;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.05);
+  border-radius: 0.6rem;
   overflow: hidden;
 
   span {
