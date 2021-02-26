@@ -1,13 +1,15 @@
 import * as S from 'components/Buttons/BtnCicle/styles'
+import { ReactComponent as PlayArrow } from 'assets/img/icons/PlayArrow.svg'
 
-type PropsTypeBg = {
-  children: any
-}
-
-export const BtnCicle = ({ children }: PropsTypeBg) => {
+export const BtnCicle = ({ onClick }: any) => {
   return (
     <>
-      <S.Btn>{children}</S.Btn>
+      <S.Btn onClick={onClick}>
+        <span>
+          Iniciar um ciclo
+          <PlayArrow />
+        </span>
+      </S.Btn>
     </>
   )
 }
