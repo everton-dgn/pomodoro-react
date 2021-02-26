@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { s } from 'theme'
 
-export const Btn = styled.button`
+export const Btn = styled.button<{ isActive?: boolean }>`
   display: flex;
   width: 100%;
   align-items: center;
@@ -10,14 +10,13 @@ export const Btn = styled.button`
   margin-top: 3.2rem;
   font-weight: 500;
   font-size: 2rem;
-  background-image: ${s.lgBlue500};
+  background-image: ${props => (props.isActive ? s.lgBlue500 : s.lgRed700)};
   color: ${s.light100};
-  transition: background 0.3s linear;
   position: relative;
   overflow: hidden;
 
-  &:before {
-    background-image: ${s.lgBlue600};
+  &:not(:disabled):before {
+    background-image: ${props => (props.isActive ? s.lgBlue600 : s.lgRed600)};
     content: '';
     display: block;
     height: 100%;
@@ -29,27 +28,8 @@ export const Btn = styled.button`
     transition: opacity 0.2s linear;
   }
 
-  &:after {
-    background-image: ${s.lgBlue700};
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    width: 100%;
-    transition: opacity 0.2s linear;
-  }
-
-  &:hover {
+  &:not(:disabled):hover {
     &:before {
-      opacity: 1;
-    }
-  }
-
-  &:focus {
-    &:after {
       opacity: 1;
     }
   }
@@ -64,4 +44,9 @@ export const Btn = styled.button`
     align-items: center;
     justify-content: center;
   }
+`
+
+export const BtnFinished = styled(Btn)`
+  background-image: ${s.lgGreen700};
+  cursor: not-allowed;
 `
