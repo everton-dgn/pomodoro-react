@@ -1,5 +1,5 @@
 export default {
-  textTime: '12rem',
+  textTime: '16rem',
   textSeparator: '10.7rem',
   textTitle1: '3.0rem',
   textTitle2: '2.8rem',
