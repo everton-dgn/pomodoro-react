@@ -4,7 +4,7 @@ import * as S from 'components/ExperienceBar/styles'
 export const ExperienceBar = () => {
   return (
     <>
-      <S.ContainerMain as={'header'}>
+      <S.ContainerMain as="header">
         <span>0 XP</span>
         <S.BarGrey>
           <S.BarGreen percent={30} />
