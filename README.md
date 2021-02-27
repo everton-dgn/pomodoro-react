@@ -1,10 +1,10 @@
-<h1 align="center">PROJETO EM CONSTRUÇÃO AINDA! :running:</h1>
+<h1 align="center">:construction: PROJETO EM CONSTRUÇÃO!</h1>
 
 # :pushpin: Tabela de conteúdos
 
 * [Sobre o projeto](#satisfied-sobre-o-projeto)
 * [Tecnologias](#snowflake-tecnologias)
-* [Instalação](#question-como-rodar-o-projeto)
+* [Instalação](#question-como-instalar-e-executar-o-projeto)
 * [Autor](#closed_book-autor)
 
 ---
@@ -18,7 +18,7 @@ O projeto Pomovi consiste em ajudar as pessoas à controlar seu tempo na frente 
 * [ViteJs](https://vitejs.dev/)
 
 ---
-# :question: Como rodar o projeto
+# :question: Como instalar e executar o projeto
 ## Acessando direto pelo site:
 * Você pode clicar nesse [link](https://pomodoro-react-chi.vercel.app/) e acessar a aplicação que está hospedada na plataforma da Vercel.
 
@@ -32,7 +32,7 @@ git clone https://github.com/everton-dgn/pomodoro-react.git
 ``` bash
 cd pomodoro-react/
 ```
-Para instalar as dependencias:
+Para instalar as dependências:
 ``` bash
 yarn
 ```
