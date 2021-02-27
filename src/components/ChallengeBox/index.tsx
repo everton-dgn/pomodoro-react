@@ -1,21 +1,24 @@
 import * as S from 'components/ChallengeBox/styles'
 import { ReactComponent as LevelUp } from 'assets/img/icons/LevelUp.svg'
 import { ReactComponent as BodyIcon } from 'assets/img/icons/Body.svg'
+import { ReactComponent as EyeIcon } from 'assets/img/icons/Eye.svg'
 import { BtnTask } from 'components/Buttons/BtnTask'
+import { useContext } from 'react'
+import { ChallengesContext } from 'contexts/ChallengesContext'
 
 export const ChallengeBox = () => {
-  const hasActiveChallenge = false
+  const { activeChallenge } = useContext(ChallengesContext)
 
   return (
     <>
-      {hasActiveChallenge ? (
+      {activeChallenge ? (
         <>
-          <S.Header>Ganhe 400 xp</S.Header>
+          <S.Header>Ganhe {activeChallenge.amount} xp</S.Header>
 
           <S.Main>
-            <BodyIcon />
+            {activeChallenge.type === 'body' ? <BodyIcon /> : <EyeIcon />}
             <h1>Novo Desafio</h1>
-            <p>Levante e faça uma caminhada de 3 minutos.</p>
+            <p>{activeChallenge.description}</p>
           </S.Main>
 
           <S.Footer>

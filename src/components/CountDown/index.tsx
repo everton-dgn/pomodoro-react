@@ -1,12 +1,15 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import * as S from 'components/CountDown/styles'
 import { c as C } from 'theme'
 import { BtnCicle } from 'components/Buttons/BtnCicle'
+import { ChallengesContext } from 'contexts/ChallengesContext'
 
 let countdownTimeout: ReturnType<typeof setTimeout>
 
 export const CountDown = () => {
-  const [time, setTime] = useState(25 * 60)
+  const { startNewChallenge } = useContext(ChallengesContext)
+
+  const [time, setTime] = useState(0.05 * 60)
   const [isActive, setIsActive] = useState(false)
   const [hasFinished, setHasFinished] = useState(false)
 
@@ -24,7 +27,7 @@ export const CountDown = () => {
   const resetCountDown = () => {
     clearTimeout(countdownTimeout)
     setIsActive(false)
-    setTime(25 * 60)
+    setTime(0.05 * 60)
   }
 
   useEffect(() => {
@@ -35,8 +38,9 @@ export const CountDown = () => {
     } else if (isActive && time === 0) {
       setHasFinished(true)
       setIsActive(false)
+      startNewChallenge()
     }
-  }, [isActive, time])
+  }, [isActive, startNewChallenge, time])
 
   return (
     <C.Box>
