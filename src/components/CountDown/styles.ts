@@ -6,6 +6,7 @@ export const CountContainer = styled(c.Row)`
   font-weight: 600;
   font-family: 'Rajdhani', 'Arial', sans-serif;
   font-size: clamp(10rem, 9rem + 2vw, ${s.textTime});
+  margin: 4rem 0;
 `
 
 export const Minutes = styled(c.Row)`

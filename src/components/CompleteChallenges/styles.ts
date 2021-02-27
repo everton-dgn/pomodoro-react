@@ -4,7 +4,7 @@ import { c, s } from 'theme'
 export const ChallengesContainer = styled(c.Row)`
   align-items: center;
   margin: 3rem 0;
-  border-bottom: 0.2rem solid ${s.light400};
+  border-bottom: 0.15rem solid ${s.light400};
   justify-content: space-between;
   padding-bottom: 1rem;
 

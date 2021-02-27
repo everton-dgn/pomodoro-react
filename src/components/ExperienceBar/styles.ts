@@ -5,7 +5,7 @@ export const ContainerMain = styled(c.Row)`
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: calc(3rem + 4vw);
 
   span {
     display: flex;

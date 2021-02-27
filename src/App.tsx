@@ -1,7 +1,6 @@
 import React from 'react'
 import GlobalStyles from 'styles/GlobalStyles'
 import * as S from 'styles'
-import { c as C } from 'theme'
 import { ExperienceBar } from 'components/ExperienceBar'
 import { Profile } from 'components/Profile'
 import { CompleteChallenges } from 'components/CompleteChallenges'
@@ -11,7 +10,7 @@ import { ChallengeBox } from 'components/ChallengeBox'
 function App() {
   return (
     <>
-      <C.Container as="main">
+      <S.Main as="main">
         <ExperienceBar />
 
         <S.ContainerGrid>
@@ -24,7 +23,7 @@ function App() {
             <ChallengeBox />
           </S.Col2>
         </S.ContainerGrid>
-      </C.Container>
+      </S.Main>
 
       <GlobalStyles />
     </>

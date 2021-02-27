@@ -13,7 +13,7 @@ export default {
   blue300: '#B2C7E6',
   blue400: '#8DA6DE',
   blue500: '#4C7AC8',
-  blue600: '#3563b3',
+  blue600: '#3674e3',
   blue700: '#3E5189',
   blue800: '#00022D',
 
@@ -29,6 +29,7 @@ export default {
   lgRed600: 'linear-gradient(47deg, #2d0000 -60%, #ff3f3f 100%)',
   lgRed700: 'linear-gradient(47deg, #2d0000, #ff3f3f 100%)',
 
-  lgGreen400: 'linear-gradient(-47deg, #005d44, #00ff7e 100%)',
-  lgGreen700: 'linear-gradient(47deg,#002d21,#1bff8c 100%)'
+  lgGreen400: 'linear-gradient(47deg, #005d44, #00ff7e 100%)',
+  lgGreen500: 'linear-gradient(47deg, #005d44, #00ff7e 100%)',
+  lgGreen700: 'linear-gradient(47deg, #002d21, #1bff8c 100%)'
 }

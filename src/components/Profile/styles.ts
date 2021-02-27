@@ -10,6 +10,7 @@ export const ProfileContainer = styled(c.Row)`
     height: 6rem;
     border-radius: 50%;
     margin-right: 1.5rem;
+    box-shadow: 0 0 1.6rem #00083021;
   }
 
   div {
