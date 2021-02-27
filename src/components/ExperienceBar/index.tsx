@@ -1,16 +1,26 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import * as S from 'components/ExperienceBar/styles'
+import { ChallengesContext } from 'contexts/ChallengesContext'
 
 export const ExperienceBar = () => {
+  const { currentExperience, experienceToNextLevel } = useContext(
+    ChallengesContext
+  )
+
+  const percentToNextLevel =
+    Math.round(currentExperience * 100) / experienceToNextLevel
+
   return (
     <>
       <S.ContainerMain as="header">
         <span>0 XP</span>
         <S.BarGrey>
-          <S.BarGreen percent={30} />
-          <S.CurrentExperience percent={30}>30 XP</S.CurrentExperience>
+          <S.BarGreen percent={percentToNextLevel} />
+          <S.CurrentExperience percent={percentToNextLevel}>
+            {currentExperience} XP
+          </S.CurrentExperience>
         </S.BarGrey>
-        <span>200 XP</span>
+        <span>{experienceToNextLevel} XP</span>
       </S.ContainerMain>
     </>
   )
