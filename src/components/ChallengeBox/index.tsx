@@ -11,7 +11,7 @@ export const ChallengeBox = () => {
 
   return (
     <>
-      {activeChallenge ? (
+      {activeChallenge.type ? (
         <>
           <S.Header>Ganhe {activeChallenge.amount} xp</S.Header>
 
