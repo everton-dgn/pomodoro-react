@@ -7,6 +7,7 @@ import { CompleteChallenges } from 'components/CompleteChallenges'
 import { CountDown } from 'components/CountDown'
 import { ChallengeBox } from 'components/ChallengeBox'
 import { ChallengesProvider } from 'contexts/ChallengesContext'
+import { CountdownProvider } from 'contexts/CountdownContext'
 
 function App() {
   return (
@@ -15,16 +16,18 @@ function App() {
         <S.Main as="main">
           <ExperienceBar />
 
-          <S.ContainerGrid>
-            <S.Col1>
-              <Profile />
-              <CompleteChallenges />
-              <CountDown />
-            </S.Col1>
-            <S.Col2>
-              <ChallengeBox />
-            </S.Col2>
-          </S.ContainerGrid>
+          <CountdownProvider>
+            <S.ContainerGrid>
+              <S.Col1>
+                <Profile />
+                <CompleteChallenges />
+                <CountDown />
+              </S.Col1>
+              <S.Col2>
+                <ChallengeBox />
+              </S.Col2>
+            </S.ContainerGrid>
+          </CountdownProvider>
         </S.Main>
 
         <GlobalStyles />

@@ -1,6 +1,7 @@
 import * as S from 'components/Buttons/BtnTask/styles'
 import { useContext } from 'react'
 import { ChallengesContext } from 'contexts/ChallengesContext'
+import { CountdownContext } from 'contexts/CountdownContext'
 
 interface Props {
   children: string
@@ -9,14 +10,25 @@ interface Props {
 
 export const BtnTask = ({ children, success }: Props) => {
   const { resetChallenge, completeChallenge } = useContext(ChallengesContext)
+  const { resetCountDown } = useContext(CountdownContext)
 
   const changeStateChallenge = () => {
     if (success) {
-      completeChallenge()
+      handleChallengeSucceeded()
       return false
     } else {
-      resetChallenge()
+      handleChallengeFailed()
     }
+  }
+
+  const handleChallengeSucceeded = () => {
+    completeChallenge()
+    resetCountDown()
+  }
+
+  const handleChallengeFailed = () => {
+    resetChallenge()
+    resetCountDown()
   }
 
   return (
