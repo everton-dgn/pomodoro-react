@@ -8,14 +8,20 @@ interface Props {
 }
 
 export const BtnTask = ({ children, success }: Props) => {
-  const { resetChallenge } = useContext(ChallengesContext)
+  const { resetChallenge, completeChallenge } = useContext(ChallengesContext)
+
+  const changeStateChallenge = () => {
+    if (success) {
+      completeChallenge()
+      return false
+    } else {
+      resetChallenge()
+    }
+  }
 
   return (
     <>
-      <S.BtnTask
-        state={success}
-        onClick={() => (success ? false : resetChallenge())}
-      >
+      <S.BtnTask state={success} onClick={changeStateChallenge}>
         <span>{children}</span>
       </S.BtnTask>
     </>
