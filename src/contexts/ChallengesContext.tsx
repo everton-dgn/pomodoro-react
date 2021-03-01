@@ -1,5 +1,6 @@
-import React, { createContext, ReactNode, useState } from 'react'
+import React, { createContext, ReactNode, useEffect, useState } from 'react'
 import challenges from 'api/challenges.json'
+import Cookies from 'js-cookie'
 
 interface ChallengeContextData {
   level: number
@@ -22,14 +23,26 @@ interface ChallengeContextData {
 
 interface ChallengesProviderProps {
   children: ReactNode
+  cookiesGet: {
+    level: number
+    currentExperience: number
+    challengesCompleted: number
+  }
 }
 
 export const ChallengesContext = createContext({} as ChallengeContextData)
 
-export const ChallengesProvider = ({ children }: ChallengesProviderProps) => {
-  const [level, setLevel] = useState(0)
-  const [currentExperience, setCurrentExperience] = useState(0)
-  const [challengesCompleted, setChallengesCompleted] = useState(0)
+export const ChallengesProvider = ({
+  children,
+  cookiesGet
+}: ChallengesProviderProps) => {
+  const [level, setLevel] = useState(cookiesGet.level || 1)
+  const [currentExperience, setCurrentExperience] = useState(
+    cookiesGet.currentExperience || 0
+  )
+  const [challengesCompleted, setChallengesCompleted] = useState(
+    cookiesGet.challengesCompleted || 0
+  )
   const baseObject = {
     type: '',
     description: '',
@@ -39,6 +52,16 @@ export const ChallengesProvider = ({ children }: ChallengesProviderProps) => {
 
   const experienceToNextLevel = Math.pow((level + 1) * 4, 2)
 
+  useEffect(() => {
+    Notification.requestPermission().then()
+  }, [])
+
+  useEffect(() => {
+    Cookies.set('level', String(level))
+    Cookies.set('currentExperience', String(currentExperience))
+    Cookies.set('challengesCompleted', String(challengesCompleted))
+  }, [level, currentExperience, challengesCompleted])
+
   const levelUp = () => {
     setLevel(level + 1)
   }
@@ -46,7 +69,20 @@ export const ChallengesProvider = ({ children }: ChallengesProviderProps) => {
   const startNewChallenge = () => {
     const randomChallengeIndex = Math.floor(Math.random() * challenges.length)
     const challenge = challenges[randomChallengeIndex]
+
     setActiveChallenge(challenge)
+
+    const audio = new Audio('audio/notification.mp3')
+    audio?.play()
+
+    let notification
+    if (Notification.permission === 'granted') {
+      notification = new Notification('Novo Desafio! 🎉', {
+        body: `Valendo ${challenge.amount} xp!`
+      })
+    } else {
+      return notification
+    }
   }
 
   const resetChallenge = () => {

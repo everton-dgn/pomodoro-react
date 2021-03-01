@@ -8,11 +8,18 @@ import { CountDown } from 'components/CountDown'
 import { ChallengeBox } from 'components/ChallengeBox'
 import { ChallengesProvider } from 'contexts/ChallengesContext'
 import { CountdownProvider } from 'contexts/CountdownContext'
+import Cookies from 'js-cookie'
 
 function App() {
+  const cookiesGet = {
+    level: Number(Cookies.get().level),
+    currentExperience: Number(Cookies.get().currentExperience),
+    challengesCompleted: Number(Cookies.get().challengesCompleted)
+  }
+
   return (
     <>
-      <ChallengesProvider>
+      <ChallengesProvider cookiesGet={cookiesGet}>
         <S.Main as="main">
           <ExperienceBar />
 
