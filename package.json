@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "js-cookie": "^2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "styled-components": "^5.2.1"
@@ -13,7 +14,7 @@
     "start": "serve -s build"
   },
   "devDependencies": {
-    "react-scripts": "4.0.3",
+    "@types/js-cookie": "^2.2.6",
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
@@ -30,6 +31,7 @@
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-react": "^7.22.0",
     "prettier": "^2.2.1",
+    "react-scripts": "4.0.3",
     "typescript": "^4.1.2"
   },
   "browserslist": {
