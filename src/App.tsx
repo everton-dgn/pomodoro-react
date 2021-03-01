@@ -30,6 +30,7 @@ function App() {
                 <CompleteChallenges />
                 <CountDown />
               </S.Col1>
+
               <S.Col2>
                 <ChallengeBox />
               </S.Col2>

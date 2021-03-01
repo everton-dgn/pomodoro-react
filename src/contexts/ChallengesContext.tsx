@@ -1,6 +1,7 @@
 import React, { createContext, ReactNode, useEffect, useState } from 'react'
 import challenges from 'api/challenges.json'
 import Cookies from 'js-cookie'
+import { LevelUpModal } from 'components/LevelUpModal'
 
 interface ChallengeContextData {
   level: number
@@ -14,6 +15,7 @@ interface ChallengeContextData {
   startNewChallenge: () => void
   resetChallenge: () => void
   completeChallenge: () => void
+  closeLEvelUpModal: () => void
   activeChallenge: {
     type: string
     description: string
@@ -49,6 +51,7 @@ export const ChallengesProvider = ({
     amount: 0
   }
   const [activeChallenge, setActiveChallenge] = useState(baseObject)
+  const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false)
 
   const experienceToNextLevel = Math.pow((level + 1) * 4, 2)
 
@@ -64,6 +67,11 @@ export const ChallengesProvider = ({
 
   const levelUp = () => {
     setLevel(level + 1)
+    setIsLevelUpModalOpen(true)
+  }
+
+  const closeLEvelUpModal = () => {
+    setIsLevelUpModalOpen(false)
   }
 
   const startNewChallenge = () => {
@@ -72,7 +80,7 @@ export const ChallengesProvider = ({
 
     setActiveChallenge(challenge)
 
-    const audio = new Audio('audio/notification.mp3')
+    const audio = new Audio('assets/audio/notification.mp3')
     audio?.play()
 
     let notification
@@ -120,10 +128,12 @@ export const ChallengesProvider = ({
         activeChallenge,
         resetChallenge,
         experienceToNextLevel,
-        completeChallenge
+        completeChallenge,
+        closeLEvelUpModal
       }}
     >
       {children}
+      {isLevelUpModalOpen && <LevelUpModal />}
     </ChallengesContext.Provider>
   )
 }
