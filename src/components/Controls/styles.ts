@@ -40,8 +40,22 @@ export const Dark = styled(DarkMode)`
 
 export const Light = styled(LightMode)`
   ${icons}
+  .colorSvg {
+    ${({ theme }) =>
+      theme.light300 &&
+      css`
+        fill: ${s.light300};
+      `}
+  }
 `
 
 export const ToClean = styled(Trash)`
   ${icons}
+  .colorSvg {
+    ${({ theme }) =>
+      theme.light300 &&
+      css`
+        fill: ${s.light300};
+      `}
+  }
 `
