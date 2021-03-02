@@ -42,7 +42,7 @@ export const Light = styled(LightMode)`
   ${icons}
   .colorSvg {
     ${({ theme }) =>
-      theme.light300 &&
+      theme.light300 === `#8ab4ff` &&
       css`
         fill: ${s.light300};
       `}
@@ -53,7 +53,7 @@ export const ToClean = styled(Trash)`
   ${icons}
   .colorSvg {
     ${({ theme }) =>
-      theme.light300 &&
+      theme.light300 === `#8ab4ff` &&
       css`
         fill: ${s.light300};
       `}
