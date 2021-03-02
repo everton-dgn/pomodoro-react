@@ -11,11 +11,11 @@
 
 ## Imagens do Projeto
 
-![Imagem do projeto](https://raw.githubusercontent.com/everton-dgn/clone-discord/master/screenshots/light.jpg)
+![Imagem do projeto](https://raw.githubusercontent.com/everton-dgn/pomodoro-react/master/screenshots/light.jpg)
 
-![Imagem do projeto](https://raw.githubusercontent.com/everton-dgn/clone-discord/master/screenshots/dark.jpg)
+![Imagem do projeto](https://raw.githubusercontent.com/everton-dgn/pomodoro-react/master/screenshots/dark.jpg)
 
-![Imagem do projeto](https://raw.githubusercontent.com/everton-dgn/clone-discord/master/screenshots/mobi.png)
+![Imagem do projeto](https://raw.githubusercontent.com/everton-dgn/pomodoro-react/master/screenshots/mobi.png)
 
 ---
 # :satisfied: Sobre o projeto
