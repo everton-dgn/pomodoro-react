@@ -1,7 +1,7 @@
 import * as S from 'components/LevelUpModal/styles'
-import { ReactComponent as Close } from 'assets/img/icons/Close.svg'
 import { useContext, useState } from 'react'
 import { ChallengesContext } from 'contexts/ChallengesContext'
+import { ReactComponent as Close } from 'assets/icons/Close.svg'
 
 export const LevelUpModal = () => {
   const { level, closeLEvelUpModal } = useContext(ChallengesContext)

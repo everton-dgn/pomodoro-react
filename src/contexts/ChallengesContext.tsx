@@ -80,7 +80,7 @@ export const ChallengesProvider = ({
 
     setActiveChallenge(challenge)
 
-    const audio = new Audio('assets/audio/notification.mp3')
+    const audio = new Audio('audio/notification.mp3')
     audio?.play()
 
     let notification

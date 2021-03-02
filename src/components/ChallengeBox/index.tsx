@@ -1,10 +1,10 @@
 import * as S from 'components/ChallengeBox/styles'
-import { ReactComponent as LevelUp } from 'assets/img/icons/LevelUp.svg'
-import { ReactComponent as BodyIcon } from 'assets/img/icons/Body.svg'
-import { ReactComponent as EyeIcon } from 'assets/img/icons/Eye.svg'
-import { BtnTask } from 'components/Buttons/BtnTask'
 import { useContext } from 'react'
+import { BtnTask } from 'components/Buttons/BtnTask'
 import { ChallengesContext } from 'contexts/ChallengesContext'
+import { ReactComponent as LevelUp } from 'assets/icons/LevelUp.svg'
+import { ReactComponent as BodyIcon } from 'assets/icons/Body.svg'
+import { ReactComponent as EyeIcon } from 'assets/icons/Eye.svg'
 
 export const ChallengeBox = () => {
   const { activeChallenge } = useContext(ChallengesContext)

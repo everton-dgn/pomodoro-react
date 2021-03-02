@@ -1,8 +1,8 @@
+import React, { MouseEventHandler } from 'react'
 import * as S from 'components/Buttons/BtnCicle/styles'
-import { ReactComponent as PlayArrow } from 'assets/img/icons/PlayArrow.svg'
-import { ReactComponent as CheckCircle } from 'assets/img/icons/CheckCircle.svg'
-import { ReactComponent as CloseCicle } from 'assets/img/icons/CloseCicle.svg'
-import { MouseEventHandler } from 'react'
+import { ReactComponent as PlayArrow } from 'assets/icons/PlayArrow.svg'
+import { ReactComponent as CheckCircle } from 'assets/icons/CheckCircle.svg'
+import { ReactComponent as CloseCicle } from 'assets/icons/CloseCicle.svg'
 
 interface Props {
   startCountDown: MouseEventHandler<HTMLButtonElement>
