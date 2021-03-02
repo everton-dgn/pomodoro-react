@@ -7,6 +7,8 @@ export const CountContainer = styled(c.Row)`
   font-family: 'Rajdhani', 'Arial', sans-serif;
   font-size: clamp(10rem, 9rem + 2vw, ${s.textTime});
   margin: 4rem 0;
+  animation: ${s.fadeIn} 0.9s ease-in-out,
+    ${s.moveIn('-10rem', '0', '0')} 0.5s ease-in-out;
 `
 
 export const Minutes = styled(c.Row)`
@@ -22,6 +24,7 @@ export const Minutes = styled(c.Row)`
     display: flex;
     flex: 1;
     justify-content: center;
+    color: ${s.light300};
 
     & + span {
       border-left: 0.25rem solid ${s.light200};
@@ -32,6 +35,7 @@ export const Minutes = styled(c.Row)`
 export const Separator = styled.span`
   font-size: ${s.textSeparator};
   margin: 0 1rem;
+  color: ${s.light300};
 `
 
 export const Seconds = styled(Minutes)``

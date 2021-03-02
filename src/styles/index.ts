@@ -27,4 +27,6 @@ export const Col2 = styled.section`
   flex-direction: column;
   align-content: center;
   justify-content: space-between;
+  animation: ${s.fadeIn} 0.9s ease-in-out,
+    ${s.moveIn('10rem', '0', '0')} 0.5s ease-in-out;
 `

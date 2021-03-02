@@ -13,7 +13,7 @@ export const Overlay = styled(c.Box)`
   background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(0.7rem);
   -webkit-backdrop-filter: blur(0.7rem);
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.6), 0 0 8px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.6), 0 0 0.8rem rgba(0, 0, 0, 0.6);
   animation: ${s.glass} 0.5s ease-in-out;
 `
 
@@ -25,6 +25,12 @@ export const ContainerModal = styled(c.Box)<{ showAnime: boolean }>`
   text-align: center;
   position: relative;
   ${props =>
+    props.theme.light500 === `#354161` &&
+    css`
+      box-shadow: 0 0 7rem rgba(0, 0, 0, 0.5);
+    `}
+
+  ${props =>
     !props.showAnime &&
     css`
       animation: ${s.zoom} 0.5s ease-in;
@@ -32,7 +38,7 @@ export const ContainerModal = styled(c.Box)<{ showAnime: boolean }>`
   ${props =>
     props.showAnime &&
     css`
-      animation: ${s.moveUp} 0.4s ease-out;
+      animation: ${s.moveUp} 0.3s ease-out;
     `};
 
   h1 {
@@ -40,7 +46,7 @@ export const ContainerModal = styled(c.Box)<{ showAnime: boolean }>`
     color: ${s.blue600};
     text-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.2);
     font-weight: 600;
-    background: url('/assets/BgLevelUp.svg') no-repeat center;
+    background: url('/BgLevelUp.svg') no-repeat center;
     background-size: contain;
   }
 
@@ -58,8 +64,12 @@ export const ContainerModal = styled(c.Box)<{ showAnime: boolean }>`
     top: 0.8rem;
     right: 0.8rem;
     font-size: 0;
-    width: 41px;
-    height: 41px;
+    width: 4.1rem;
+    height: 4.1rem;
     background-color: transparent;
+
+    svg {
+      filter: invert(1);
+    }
   }
 `

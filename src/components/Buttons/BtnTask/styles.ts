@@ -3,7 +3,7 @@ import { s } from 'theme'
 
 export const BtnTask = styled.button<{ state: boolean }>`
   background-image: ${props => (props.state ? s.lgGreen700 : s.lgRed700)};
-  color: ${s.light100};
+  color: ${s.lightTextBtn};
   height: 5rem;
   width: 50%;
   display: flex;
