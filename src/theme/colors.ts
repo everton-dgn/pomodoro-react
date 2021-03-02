@@ -1,34 +1,77 @@
+import { css } from 'styled-components'
+
 export default {
-  dark400: '#374151',
-  dark500: '#223543',
-  dark700: '#333',
-  dark800: '#222',
-  dark900: '#000',
+  dark500: css`
+    ${({ theme }) => theme.dark500}
+  `,
 
-  light100: '#fff',
-  light200: '#f5f5ff',
-  light400: '#dbdfed',
+  light100: css`
+    ${({ theme }) => theme.light100}
+  `,
 
-  blue200: '#D8E4F8',
-  blue300: '#B2C7E6',
-  blue400: '#8DA6DE',
-  blue500: '#4C7AC8',
-  blue600: '#3563b3',
-  blue700: '#3E5189',
-  blue800: '#00022D',
+  light200: css`
+    ${({ theme }) => theme.light200}
+  `,
 
-  red300: '#f44336',
+  light300: css`
+    ${({ theme }) => theme.light300}
+  `,
 
-  green300: '#4ae36c',
+  light400: css`
+    ${({ theme }) => theme.light400}
+  `,
+
+  light500: css`
+    ${({ theme }) => theme.light500}
+  `,
+
+  lightTextBtn: css`
+    ${({ theme }) => theme.lightTextBtn}
+  `,
+
+  blue300: css`
+    ${({ theme }) => theme.blue300}
+  `,
+
+  blue600: css`
+    ${({ theme }) => theme.blue600}
+  `,
+
+  red300: css`
+    ${({ theme }) => theme.red300}
+  `,
+
+  green300: css`
+    ${({ theme }) => theme.green300}
+  `,
 
   //  gradients
 
-  lgBlue500: 'linear-gradient(47deg, #00022D, #3f86ff 100%)',
-  lgBlue600: 'linear-gradient(47deg, #00022D -60%, #3f86ff 100%)',
+  lgBlue500: css`
+    ${({ theme }) => theme.lgBlue500}
+  `,
 
-  lgRed600: 'linear-gradient(-47deg, #2d0000 -60%, #ff3f3f 100%)',
-  lgRed700: 'linear-gradient(-47deg, #2d0000, #ff3f3f 100%)',
+  lgBlue600: css`
+    ${({ theme }) => theme.lgBlue600}
+  `,
 
-  lgGreen400: 'linear-gradient(47deg, #005d44, #00ff7e 100%)',
-  lgGreen700: 'linear-gradient(-47deg,#002d21,#1bff8c 100%)'
+  lgRed600: css`
+    ${({ theme }) => theme.lgRed600}
+  `,
+
+  lgRed700: css`
+    ${({ theme }) => theme.lgRed700}
+  `,
+
+  lgGreen400: css`
+    ${({ theme }) => theme.lgGreen400}
+  `,
+
+  lgGreen500: css`
+    ${({ theme }) => theme.lgGreen500}
+  `,
+
+  lgGreen700: css`
+    ${({ theme }) => theme.lgGreen700}
+  `
 }
