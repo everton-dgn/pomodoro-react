@@ -1,5 +1,4 @@
-import React from 'react'
-import GlobalStyles from 'styles/GlobalStyles'
+import React, { useState } from 'react'
 import * as S from 'styles'
 import { ExperienceBar } from 'components/ExperienceBar'
 import { Profile } from 'components/Profile'
@@ -8,7 +7,11 @@ import { CountDown } from 'components/CountDown'
 import { ChallengeBox } from 'components/ChallengeBox'
 import { ChallengesProvider } from 'contexts/ChallengesContext'
 import { CountdownProvider } from 'contexts/CountdownContext'
+import { Controls } from 'components/Controls'
 import Cookies from 'js-cookie'
+import GlobalStyles from 'styles/GlobalStyles'
+import { ThemeProvider } from 'styled-components'
+import { light, dark } from 'theme/color'
 
 function App() {
   const cookiesGet = {
@@ -17,29 +20,36 @@ function App() {
     challengesCompleted: Number(Cookies.get().challengesCompleted)
   }
 
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem('darkMode') === 'false'
+  )
+
   return (
     <>
-      <ChallengesProvider cookiesGet={cookiesGet}>
-        <S.Main as="main">
-          <ExperienceBar />
-
+      <ThemeProvider theme={darkMode ? dark : light}>
+        <ChallengesProvider cookiesGet={cookiesGet}>
           <CountdownProvider>
-            <S.ContainerGrid>
-              <S.Col1>
-                <Profile />
-                <CompleteChallenges />
-                <CountDown />
-              </S.Col1>
+            <S.Main as="main">
+              <ExperienceBar />
 
-              <S.Col2>
-                <ChallengeBox />
-              </S.Col2>
-            </S.ContainerGrid>
+              <S.ContainerGrid>
+                <S.Col1>
+                  <Profile />
+                  <CompleteChallenges />
+                  <Controls darkMode={darkMode} setDarkMode={setDarkMode} />
+                  <CountDown />
+                </S.Col1>
+
+                <S.Col2>
+                  <ChallengeBox />
+                </S.Col2>
+              </S.ContainerGrid>
+            </S.Main>
+
+            <GlobalStyles />
           </CountdownProvider>
-        </S.Main>
-
-        <GlobalStyles />
-      </ChallengesProvider>
+        </ChallengesProvider>
+      </ThemeProvider>
     </>
   )
 }

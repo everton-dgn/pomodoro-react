@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 import { s } from 'theme'
 
-export default createGlobalStyle`
+export default createGlobalStyle<{ theme: any }>`
   * {
     padding: 0;
     margin: 0;
@@ -14,7 +14,7 @@ export default createGlobalStyle`
 
   html {
     font-size: 62.5%;
-  
+
     ${s.breakMax('120rem')} {
       font-size: 59.5%;
     }
@@ -22,16 +22,16 @@ export default createGlobalStyle`
     ${s.breakMax('99.2rem')} {
       font-size: 56.5%;
     }
-    
+
     ${s.breakMax('76.8rem')} {
       font-size: 53.5%;
     }
-    
+
     ${s.breakMax('57.6rem')} {
       font-size: 50.5%;
     }
   }
-  
+
   body,
   html,
   #root {
