@@ -1,6 +1,7 @@
-<h1 align="center">PROJETO POMOVI</h1>
+<h1 align="center">_**PROJETO POMOVI**_</h1>
 
 <br />  
+
 # :pushpin: Índice de conteúdos
 
 - [Screenshots do Projeto](#camera_flash-screenshots-do-projeto)
