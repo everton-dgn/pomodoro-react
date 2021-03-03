@@ -2,14 +2,16 @@
 
 # :pushpin: Índice de conteúdos
 
-- [Sobre o projeto](#monocle_face-sobre-o-projeto)
-- [Tecnologias](#laptop-tecnologias-usadas)
+- [Screenshots do Projeto](#camera_flash-screenshots-do-projeto)
+- [Sobre o Projeto](#monocle_face-sobre-o-projeto)
+- [Tecnologias](#globe_with_meridians-tecnologias-usadas)
+- [Features](#triangular_flag_on_post-features)
 - [Instalação](#question-como-instalar-e-executar-o-projeto)
 - [Autor](#closed_book-autor)
 
 ---
 
-## Imagens do Projeto
+# :camera_flash: Screenshots do Projeto
 
 ![Imagem do projeto](https://raw.githubusercontent.com/everton-dgn/pomodoro-react/master/screenshots/light.jpg)
 
@@ -18,13 +20,13 @@
 ![Imagem do projeto](https://raw.githubusercontent.com/everton-dgn/pomodoro-react/master/screenshots/mobi.png)
 
 ---
-# :monocle_face: Sobre o projeto
+# :monocle_face: Sobre o Projeto
 
 O projeto Pomovi consiste em ajudar as pessoas à controlar seu tempo na frente do PC para poder fazer pequenas pausas e assim, descansar a visão e o corpo.
 
 ---
 
-# :Laptop: Tecnologias Usadas
+# :globe_with_meridians: Tecnologias Usadas
 
 ⚛ React js
 
@@ -36,7 +38,7 @@ O projeto Pomovi consiste em ajudar as pessoas à controlar seu tempo na frente 
 
 ---
 
-## Features
+# :triangular_flag_on_post: Features
 
 - [x] Front-end baseado no projeto Movi.it da Rocketseat.
 
