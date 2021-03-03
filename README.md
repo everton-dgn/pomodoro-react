@@ -1,6 +1,5 @@
 <h1 align="center">PROJETO POMOVI</h1>
 
----
 <br />  
 # :pushpin: Índice de conteúdos
 
@@ -11,7 +10,8 @@
 - [Instalação](#question-como-instalar-e-executar-o-projeto)
 - [Autor](#closed_book-autor)
   
-<br /> 
+<br />
+
 ---
 
 # :camera_flash: Screenshots do Projeto
@@ -22,10 +22,14 @@
 
 ![Imagem do projeto](https://raw.githubusercontent.com/everton-dgn/pomodoro-react/master/screenshots/mobi.png)
 
+<br />
+
 ---
 # :monocle_face: Sobre o Projeto
 
 O projeto Pomovi consiste em ajudar as pessoas à controlar seu tempo na frente do PC para poder fazer pequenas pausas e assim, descansar a visão e o corpo.
+
+<br />
 
 ---
 
@@ -38,6 +42,8 @@ O projeto Pomovi consiste em ajudar as pessoas à controlar seu tempo na frente 
 💅 Styled-Components
 
 ✅ Lints — ESlint/Prettier/EditorConfig
+
+<br />
 
 ---
 
@@ -61,12 +67,19 @@ O projeto Pomovi consiste em ajudar as pessoas à controlar seu tempo na frente 
 
 - [x] Registra desafios completos, pontuação e level.
 
+<br />
+
 ---
+
 # :question: Como instalar e executar o projeto
+
+<br />
 
 ## Acessando direto pelo site:
 
 - Você pode clicar nesse [link](https://pomodoro-react-chi.vercel.app/) e acessar a aplicação que está hospedada na plataforma da Vercel.
+
+<br />
 
 ## Executar na máquina local:
 
@@ -109,6 +122,8 @@ yarn start
 ```
 
 3. Por fim, abra a pasta clonada em seu editor de códigos favorito e faça as suas alterações! xD
+
+<br />
 
 ---
 
