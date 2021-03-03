@@ -1,4 +1,4 @@
-<h1 align="center">_**PROJETO POMOVI**_</h1>
+<h1 align="center">PROJETO POMOVI</h1>
 
 <br />  
 
