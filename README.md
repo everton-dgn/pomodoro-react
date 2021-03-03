@@ -1,5 +1,7 @@
 <h1 align="center">PROJETO POMOVI</h1>
 
+---
+<br />  
 # :pushpin: Índice de conteúdos
 
 - [Screenshots do Projeto](#camera_flash-screenshots-do-projeto)
@@ -8,7 +10,8 @@
 - [Features](#triangular_flag_on_post-features)
 - [Instalação](#question-como-instalar-e-executar-o-projeto)
 - [Autor](#closed_book-autor)
-
+  
+<br /> 
 ---
 
 # :camera_flash: Screenshots do Projeto
