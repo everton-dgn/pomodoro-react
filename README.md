@@ -2,8 +2,8 @@
 
 # :pushpin: Índice de conteúdos
 
-- [Sobre o projeto](#satisfied-sobre-o-projeto)
-- [Tecnologias](#snowflake-tecnologias-usadas)
+- [Sobre o projeto](#monocle_face-sobre-o-projeto)
+- [Tecnologias](#laptop-tecnologias-usadas)
 - [Instalação](#question-como-instalar-e-executar-o-projeto)
 - [Autor](#closed_book-autor)
 
@@ -18,13 +18,13 @@
 ![Imagem do projeto](https://raw.githubusercontent.com/everton-dgn/pomodoro-react/master/screenshots/mobi.png)
 
 ---
-# :satisfied: Sobre o projeto
+# :monocle_face: Sobre o projeto
 
 O projeto Pomovi consiste em ajudar as pessoas à controlar seu tempo na frente do PC para poder fazer pequenas pausas e assim, descansar a visão e o corpo.
 
 ---
 
-# :snowflake: Tecnologias Usadas
+# :Laptop: Tecnologias Usadas
 
 ⚛ React js
 
