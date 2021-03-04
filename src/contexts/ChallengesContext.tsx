@@ -57,7 +57,7 @@ export const ChallengesProvider = ({
   const experienceToNextLevel = Math.pow((level + 1) * 4, 2)
 
   useEffect(() => {
-    Notification?.requestPermission().then()
+    if (Notification) Notification.requestPermission().then()
   }, [])
 
   useEffect(() => {
@@ -85,7 +85,7 @@ export const ChallengesProvider = ({
     audio?.play()
 
     let notification
-    if (Notification?.permission === 'granted') {
+    if (Notification.permission === 'granted') {
       notification = new Notification('Novo Desafio! 🎉', {
         body: `Valendo ${challenge.amount} xp!`
       })

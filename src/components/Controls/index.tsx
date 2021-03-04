@@ -32,7 +32,7 @@ export const Controls = ({ darkMode, setDarkMode }: any) => {
       description: '',
       amount: 0
     })
-    setTime(0.05 * 60)
+    setTime(25 * 60)
     setHasFinished(false)
   }
 
