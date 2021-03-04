@@ -16,6 +16,7 @@ interface ChallengeContextData {
   resetChallenge: () => void
   completeChallenge: () => void
   closeLEvelUpModal: () => void
+  setActiveChallenge: any
   activeChallenge: {
     type: string
     description: string
@@ -56,7 +57,7 @@ export const ChallengesProvider = ({
   const experienceToNextLevel = Math.pow((level + 1) * 4, 2)
 
   useEffect(() => {
-    Notification.requestPermission().then()
+    Notification?.requestPermission().then()
   }, [])
 
   useEffect(() => {
@@ -84,7 +85,7 @@ export const ChallengesProvider = ({
     audio?.play()
 
     let notification
-    if (Notification.permission === 'granted') {
+    if (Notification?.permission === 'granted') {
       notification = new Notification('Novo Desafio! 🎉', {
         body: `Valendo ${challenge.amount} xp!`
       })
@@ -126,6 +127,7 @@ export const ChallengesProvider = ({
         levelUp,
         startNewChallenge,
         activeChallenge,
+        setActiveChallenge,
         resetChallenge,
         experienceToNextLevel,
         completeChallenge,

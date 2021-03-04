@@ -2,11 +2,17 @@ import * as S from 'components/Controls/styles'
 import Cookies from 'js-cookie'
 import { useContext } from 'react'
 import { ChallengesContext } from 'contexts/ChallengesContext'
+import { CountdownContext } from 'contexts/CountdownContext'
 
 export const Controls = ({ darkMode, setDarkMode }: any) => {
-  const { setLevel, setCurrentExperience, setChallengesCompleted } = useContext(
-    ChallengesContext
-  )
+  const {
+    setLevel,
+    setCurrentExperience,
+    setChallengesCompleted,
+    setActiveChallenge
+  } = useContext(ChallengesContext)
+
+  const { setTime, setHasFinished } = useContext(CountdownContext)
 
   const changeTheme = () => {
     setDarkMode(!darkMode)
@@ -21,6 +27,13 @@ export const Controls = ({ darkMode, setDarkMode }: any) => {
     setLevel(1)
     setCurrentExperience(0)
     setChallengesCompleted(0)
+    setActiveChallenge({
+      type: '',
+      description: '',
+      amount: 0
+    })
+    setTime(0.05 * 60)
+    setHasFinished(false)
   }
 
   return (
