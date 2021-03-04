@@ -12,7 +12,9 @@ export const Controls = ({ darkMode, setDarkMode }: any) => {
     setActiveChallenge
   } = useContext(ChallengesContext)
 
-  const { setTime, setHasFinished } = useContext(CountdownContext)
+  const { setTime, setHasFinished, resetCountDown } = useContext(
+    CountdownContext
+  )
 
   const changeTheme = () => {
     setDarkMode(!darkMode)
@@ -34,6 +36,7 @@ export const Controls = ({ darkMode, setDarkMode }: any) => {
     })
     setTime(25 * 60)
     setHasFinished(false)
+    resetCountDown()
   }
 
   return (
