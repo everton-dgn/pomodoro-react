@@ -57,7 +57,7 @@ export const ChallengesProvider = ({
   const experienceToNextLevel = Math.pow((level + 1) * 4, 2)
 
   useEffect(() => {
-    if (Notification) Notification.requestPermission().then()
+    Notification.requestPermission().then()
   }, [])
 
   useEffect(() => {
