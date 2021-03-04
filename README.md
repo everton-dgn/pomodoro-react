@@ -28,9 +28,9 @@
 ---
 # :monocle_face: Sobre o Projeto
 
-<center>
+<p align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qPCAX0j91EM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+</p>
 
 O projeto Pomovi consiste em ajudar as pessoas à controlar seu tempo na frente do PC para poder fazer pequenas pausas e assim, descansar a visão e o corpo.
 
