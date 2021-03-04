@@ -25,10 +25,12 @@
 
 <br />
 
+### Veja o [vídeo de demonstração](https://www.youtube.com/watch?v=qPCAX0j91EM).
+
+<br />
+
 ---
 # :monocle_face: Sobre o Projeto
-
-- Veja o [vídeo de demonstração](https://www.youtube.com/embed/qPCAX0j91EM).
 
 O projeto Pomovi consiste em ajudar as pessoas à controlar seu tempo na frente do PC para poder fazer pequenas pausas e assim, descansar a visão e o corpo.
 
