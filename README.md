@@ -78,7 +78,7 @@ O projeto Pomovi consiste em ajudar as pessoas à controlar seu tempo na frente 
 
 ## Acessando direto pelo site:
 
-- Você pode clicar nesse [link](https://pomodoro-react-chi.vercel.app/) e acessar a aplicação que está hospedada na plataforma da Vercel.
+- Você pode clicar nesse [link](https://pomodoro-react-rouge.vercel.app/) e acessar a aplicação que está hospedada na plataforma da Vercel.
 
 <br />
 
