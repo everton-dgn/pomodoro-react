@@ -1,5 +1,5 @@
-<a href="./LICENSE">![GitHub](https://img.shields.io/github/license/everton-dgn/pomodoro-react?style=plastic)</a> &middot; 
-![GitHub repo size](https://img.shields.io/github/repo-size/everton-dgn/pomodoro-react?style=plastic) &middot; 
+<a href="./LICENSE">![GitHub](https://img.shields.io/github/license/everton-dgn/pomodoro-react?style=plastic)</a>  
+![GitHub repo size](https://img.shields.io/github/repo-size/everton-dgn/pomodoro-react?style=plastic) 
 ![GitHub Repo stars](https://img.shields.io/github/stars/everton-dgn/pomodoro-react?color=yellow&style=plastic)
 
 <h1 align="center">PROJETO POMOVI</h1>
