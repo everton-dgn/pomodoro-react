@@ -1,4 +1,4 @@
-<a href="./LICENSE">![GitHub](https://img.shields.io/github/license/everton-dgn/pomodoro-react?style=plastic)</a>
+<a href="./LICENSE">![GitHub](https://img.shields.io/github/license/everton-dgn/pomodoro-react?style=plastic)</a> | https://img.shields.io/github/languages/code-size/everton-dgn/pomodoro-react?color=green&style=plastic
 
 <h1 align="center">PROJETO POMOVI</h1>
 
