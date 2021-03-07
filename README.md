@@ -1,3 +1,5 @@
+<a href="./LICENSE">![GitHub](https://img.shields.io/github/license/everton-dgn/pomodoro-react?style=plastic)</a>
+
 <h1 align="center">PROJETO POMOVI</h1>
 
 <br />  
